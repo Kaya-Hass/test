@@ -23,6 +23,7 @@ public class PlayerInteractions : MonoBehaviour
         else if(timer < 0)
         {
             timer = 0;
+            CheckZone();
         }
 
         int minutes = Mathf.FloorToInt(timer / 60);
@@ -43,6 +44,11 @@ public class PlayerInteractions : MonoBehaviour
             Debug.Log("PuzzleZone");
             inPuzzleZone = true;
         }
+
+        if(collision.CompareTag("Exit"))
+        {
+            //next scene
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -55,6 +61,22 @@ public class PlayerInteractions : MonoBehaviour
         if(collision.CompareTag("Puzzle"))
         {
             inPuzzleZone = false;
+        }
+    }
+
+    void CheckZone()
+    {
+        if(inSleepZone)
+        {
+            //youre safe panel
+        }
+        else if(inPuzzleZone)
+        {
+            //puzzle panel
+        }
+        else
+        {
+            //you died panel
         }
     }
 }
