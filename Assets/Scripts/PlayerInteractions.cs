@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteractions : MonoBehaviour
 {
@@ -7,10 +9,16 @@ public class PlayerInteractions : MonoBehaviour
     bool inPuzzleZone;
     public TMP_Text timerText;
     public float timer;
+
+    public GameObject deathPanel;
+    public GameObject safePanel;
+    public GameObject puzzlePanel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        deathPanel.SetActive(false);
+        safePanel.SetActive(false);
+        puzzlePanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,7 +31,7 @@ public class PlayerInteractions : MonoBehaviour
         else if(timer < 0)
         {
             timer = 0;
-            CheckZone();
+            StartCoroutine(CheckZone());
         }
 
         int minutes = Mathf.FloorToInt(timer / 60);
@@ -47,7 +55,7 @@ public class PlayerInteractions : MonoBehaviour
 
         if(collision.CompareTag("Exit"))
         {
-            //next scene
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
@@ -64,19 +72,26 @@ public class PlayerInteractions : MonoBehaviour
         }
     }
 
-    void CheckZone()
+    IEnumerator CheckZone()
     {
         if(inSleepZone)
         {
-            //youre safe panel
+            safePanel.SetActive(true);
+            yield return new WaitForSeconds(5);
+            safePanel.SetActive(false);
+            timer = 5f;
         }
-        else if(inPuzzleZone)
+        else if(inPuzzleZone && !inSleepZone)
         {
-            //puzzle panel
+            puzzlePanel.SetActive(true);
+            yield return new WaitForSeconds(3);
+            puzzlePanel.SetActive(false);
+            timer = 5f;
         }
         else
         {
-            //you died panel
+            yield return new WaitForSeconds(2);
+            deathPanel.SetActive(true);
         }
     }
 }
