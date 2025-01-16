@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pixel-Art-Black-Background-Wallpaper-49673_0: -8810664526934207792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
