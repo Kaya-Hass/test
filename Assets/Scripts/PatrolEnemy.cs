@@ -18,14 +18,29 @@ public class PatrolEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector2.Distance(transform.position, pointB.transform.position) < 0.1f)
+        if(gameObject.CompareTag("UpDown"))
         {
-            rb.linearVelocity = new Vector2(0, -speed);
+            if(Vector2.Distance(transform.position, pointB.transform.position) < 0.1f)
+            {
+                rb.linearVelocity = new Vector2(0, -speed);
+            }
+            else if(Vector2.Distance(transform.position, pointA.transform.position) < 0.1f)
+            {
+                rb.linearVelocity = new Vector2(0, speed);
+            }
         }
-        else if(Vector2.Distance(transform.position, pointA.transform.position) < 0.1f)
+        else if(gameObject.CompareTag("LeftRight"))
         {
-            rb.linearVelocity = new Vector2(0, speed);
+            if(Vector2.Distance(transform.position, pointB.transform.position) < 0.1f)
+            {
+                rb.linearVelocity = new Vector2(speed, 0);
+            }
+            else if(Vector2.Distance(transform.position, pointA.transform.position) < 0.1f)
+            {
+                rb.linearVelocity = new Vector2(-speed, 0);
+            }
         }
+
 
     }
 }
