@@ -2,17 +2,18 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerInteractions : MonoBehaviour
 {
     bool inSleepZone;
     bool inPuzzleZone;
-    public TMP_Text timerText;
     public float timer;
 
     public GameObject deathPanel;
     public GameObject safePanel;
     public GameObject puzzlePanel;
+    public Slider sleepBar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,9 +35,8 @@ public class PlayerInteractions : MonoBehaviour
             StartCoroutine(CheckZone());
         }
 
-        int minutes = Mathf.FloorToInt(timer / 60);
-        int seconds = Mathf.FloorToInt(timer % 60);
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        sleepBar.value = timer;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
