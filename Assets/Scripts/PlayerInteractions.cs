@@ -34,8 +34,6 @@ public class PlayerInteractions : MonoBehaviour
             timer = 0;
             StartCoroutine(CheckZone());
         }
-
-
         sleepBar.value = timer;
     }
 
