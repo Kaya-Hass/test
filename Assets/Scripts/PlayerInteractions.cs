@@ -14,6 +14,8 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject safePanel;
     public GameObject puzzlePanel;
     public Slider sleepBar;
+
+    public GameObject camera;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -83,7 +85,7 @@ public class PlayerInteractions : MonoBehaviour
         else if(inPuzzleZone && !inSleepZone)
         {
             puzzlePanel.SetActive(true);
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(20);
             puzzlePanel.SetActive(false);
             timer = 5f;
         }
