@@ -6,11 +6,14 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private RectTransform rectTrans;
     public Canvas myCanvas;
     CanvasGroup canvasGroup;
+    public int id;
+    Vector2 initPos;
 
     void Start()
     {
         rectTrans = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        initPos = transform.position;
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -30,5 +33,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public void OnPointerDown(PointerEventData eventData)
     {
 
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = initPos;
     }
 }

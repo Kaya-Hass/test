@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - UpDown
   - LeftRight
+  - puzzle01
   layers:
   - Default
   - TransparentFX

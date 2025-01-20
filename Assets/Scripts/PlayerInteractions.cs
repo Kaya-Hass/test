@@ -16,6 +16,10 @@ public class PlayerInteractions : MonoBehaviour
     public Slider sleepBar;
 
     public GameObject camera;
+
+    public int puzzle01;
+    public int puzzle02;
+    public int puzzle03;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,6 +32,7 @@ public class PlayerInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(puzzle01);
         if(timer > 0)
         {
             timer -= Time.deltaTime;
@@ -38,6 +43,15 @@ public class PlayerInteractions : MonoBehaviour
             StartCoroutine(CheckZone());
         }
         sleepBar.value = timer;
+
+        if(puzzle01 >= 3 || puzzle02 >= 4 || puzzle03 >= 5)
+        {
+            puzzlePanel.SetActive(false);
+            puzzle01 = 0;
+            puzzle02 = 0;
+            puzzle03 = 0;
+            timer = 5f;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -84,10 +98,8 @@ public class PlayerInteractions : MonoBehaviour
         }
         else if(inPuzzleZone && !inSleepZone)
         {
+            yield return new WaitForSeconds(2);
             puzzlePanel.SetActive(true);
-            yield return new WaitForSeconds(20);
-            puzzlePanel.SetActive(false);
-            timer = 5f;
         }
         else
         {
