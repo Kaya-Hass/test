@@ -1,0 +1,1885 @@
+fileFormatVersion: 2
+guid: f11c62e363099c341ac57d3f3b1a2c53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4340861223791395822
+    second: Dynamic Menu MC Animation copy_0
+  - first:
+      213: 9101109474520331047
+    second: Dynamic Menu MC Animation copy_1
+  - first:
+      213: -3121001677457506117
+    second: Dynamic Menu MC Animation copy_2
+  - first:
+      213: -9017373169594640058
+    second: Dynamic Menu MC Animation copy_3
+  - first:
+      213: 615201686270981998
+    second: Dynamic Menu MC Animation copy_4
+  - first:
+      213: -3058690026594539652
+    second: Dynamic Menu MC Animation copy_5
+  - first:
+      213: -2368807938886170315
+    second: Dynamic Menu MC Animation copy_6
+  - first:
+      213: -3273441058544111262
+    second: Dynamic Menu MC Animation copy_7
+  - first:
+      213: 1562444299539812135
+    second: Dynamic Menu MC Animation copy_8
+  - first:
+      213: 1742385648000055461
+    second: Dynamic Menu MC Animation copy_9
+  - first:
+      213: 6408667135745661494
+    second: Dynamic Menu MC Animation copy_10
+  - first:
+      213: -8292469820444067248
+    second: Dynamic Menu MC Animation copy_11
+  - first:
+      213: -5094306102068388434
+    second: Dynamic Menu MC Animation copy_12
+  - first:
+      213: 1873916234411411067
+    second: Dynamic Menu MC Animation copy_13
+  - first:
+      213: 4025611792148685056
+    second: Dynamic Menu MC Animation copy_14
+  - first:
+      213: 3669175821713546700
+    second: Dynamic Menu MC Animation copy_15
+  - first:
+      213: 7472392219142329475
+    second: Dynamic Menu MC Animation copy_16
+  - first:
+      213: 2698840729761225661
+    second: Dynamic Menu MC Animation copy_17
+  - first:
+      213: -800321091464860980
+    second: Dynamic Menu MC Animation copy_18
+  - first:
+      213: -840345047338638584
+    second: Dynamic Menu MC Animation copy_19
+  - first:
+      213: 2046368677143640693
+    second: Dynamic Menu MC Animation copy_20
+  - first:
+      213: 6792133724940072589
+    second: Dynamic Menu MC Animation copy_21
+  - first:
+      213: -2794413908818898657
+    second: Dynamic Menu MC Animation copy_22
+  - first:
+      213: 1547466384177989998
+    second: Dynamic Menu MC Animation copy_23
+  - first:
+      213: 4366109394439704564
+    second: Dynamic Menu MC Animation copy_24
+  - first:
+      213: 6407972411470064828
+    second: Dynamic Menu MC Animation copy_25
+  - first:
+      213: -7489570779694692223
+    second: Dynamic Menu MC Animation copy_26
+  - first:
+      213: -6223670482208453070
+    second: Dynamic Menu MC Animation copy_27
+  - first:
+      213: 5956766571222562127
+    second: Dynamic Menu MC Animation copy_28
+  - first:
+      213: 8884613504701474987
+    second: Dynamic Menu MC Animation copy_29
+  - first:
+      213: -3426612784436466344
+    second: Dynamic Menu MC Animation copy_30
+  - first:
+      213: 6870312477038057201
+    second: Dynamic Menu MC Animation copy_31
+  - first:
+      213: -2266130252065030126
+    second: Dynamic Menu MC Animation copy_32
+  - first:
+      213: -5766196649730428429
+    second: Dynamic Menu MC Animation copy_33
+  - first:
+      213: 4335818408851287915
+    second: Dynamic Menu MC Animation copy_34
+  - first:
+      213: -3310751447001714158
+    second: Dynamic Menu MC Animation copy_35
+  - first:
+      213: 5651642790446585925
+    second: Dynamic Menu MC Animation copy_36
+  - first:
+      213: -7918089165002946033
+    second: Dynamic Menu MC Animation copy_37
+  - first:
+      213: -5383302103657376137
+    second: Dynamic Menu MC Animation copy_38
+  - first:
+      213: 8489398584651874058
+    second: Dynamic Menu MC Animation copy_39
+  - first:
+      213: 2708904487514885557
+    second: Dynamic Menu MC Animation copy_40
+  - first:
+      213: 5581325005718325894
+    second: Dynamic Menu MC Animation copy_41
+  - first:
+      213: -8386424885371896242
+    second: Dynamic Menu MC Animation copy_42
+  - first:
+      213: 3797230551784225157
+    second: Dynamic Menu MC Animation copy_43
+  - first:
+      213: -1539660702360935059
+    second: Dynamic Menu MC Animation copy_44
+  - first:
+      213: 8967023837316540455
+    second: Dynamic Menu MC Animation copy_45
+  - first:
+      213: 1772317725345525800
+    second: Dynamic Menu MC Animation copy_46
+  - first:
+      213: 558486204800217854
+    second: Dynamic Menu MC Animation copy_47
+  - first:
+      213: -4024616265713348613
+    second: Dynamic Menu MC Animation copy_48
+  - first:
+      213: -3676421993272659418
+    second: Dynamic Menu MC Animation copy_49
+  - first:
+      213: -1099243478091722761
+    second: Dynamic Menu MC Animation copy_50
+  - first:
+      213: 2482661637022627851
+    second: Dynamic Menu MC Animation copy_51
+  - first:
+      213: 8217747303017840239
+    second: Dynamic Menu MC Animation copy_52
+  - first:
+      213: 4800192850468900771
+    second: Dynamic Menu MC Animation copy_53
+  - first:
+      213: 1219430309848999160
+    second: Dynamic Menu MC Animation copy_54
+  - first:
+      213: -7057831375657810236
+    second: Dynamic Menu MC Animation copy_55
+  - first:
+      213: 3822327694308584619
+    second: Dynamic Menu MC Animation copy_56
+  - first:
+      213: 6342857033266256459
+    second: Dynamic Menu MC Animation copy_57
+  - first:
+      213: -5285019188883601726
+    second: Dynamic Menu MC Animation copy_58
+  - first:
+      213: 3572342657450674298
+    second: Dynamic Menu MC Animation copy_59
+  - first:
+      213: -7978524772046750241
+    second: Dynamic Menu MC Animation copy_60
+  - first:
+      213: 2950385287626719373
+    second: Dynamic Menu MC Animation copy_61
+  - first:
+      213: -8585069339747056880
+    second: Dynamic Menu MC Animation copy_62
+  - first:
+      213: 4223006817732111953
+    second: Dynamic Menu MC Animation copy_63
+  - first:
+      213: 6985306212089773964
+    second: Dynamic Menu MC Animation copy_64
+  - first:
+      213: -4185272837832392731
+    second: Dynamic Menu MC Animation copy_65
+  - first:
+      213: -5403813586025727060
+    second: Dynamic Menu MC Animation copy_66
+  - first:
+      213: -252030059762008527
+    second: Dynamic Menu MC Animation copy_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c75a047b922c3c0800000000000000
+      internalID: -4340861223791395822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 88
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723f9bae8d2ad4e70800000000000000
+      internalID: 9101109474520331047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb04fb79289ffa4d0800000000000000
+      internalID: -3121001677457506117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 88
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6495c2bd0eadbd280800000000000000
+      internalID: -9017373169594640058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6737679ca2a98800800000000000000
+      internalID: 615201686270981998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 88
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c776dce50a95d85d0800000000000000
+      internalID: -3058690026594539652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5398095eabd402fd0800000000000000
+      internalID: -2368807938886170315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 88
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261bc4063b66292d0800000000000000
+      internalID: -3273441058544111262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f876fefcaeea510800000000000000
+      internalID: 1562444299539812135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_9
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 88
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a838cae3823e2810800000000000000
+      internalID: 1742385648000055461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_10
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a17dd2ec820f850800000000000000
+      internalID: 6408667135745661494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_11
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 88
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ab8c932aa3bec80800000000000000
+      internalID: -8292469820444067248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_12
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaddb1947936d49b0800000000000000
+      internalID: -5094306102068388434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_13
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 88
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b760ee203ec710a10800000000000000
+      internalID: 1873916234411411067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_14
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00165aaa898ddd730800000000000000
+      internalID: 4025611792148685056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_15
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 88
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd10bf38f78be230800000000000000
+      internalID: 3669175821713546700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_16
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3841f54022543b760800000000000000
+      internalID: 7472392219142329475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_17
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 88
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb16ca3855347520800000000000000
+      internalID: 2698840729761225661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_18
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccaebf42530b4e4f0800000000000000
+      internalID: -800321091464860980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_19
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 88
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8032f9cb1ae7654f0800000000000000
+      internalID: -840345047338638584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_20
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57af1a04879266c10800000000000000
+      internalID: 2046368677143640693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_21
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 88
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86f006f2a1824e50800000000000000
+      internalID: 6792133724940072589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_22
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 88
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f115079fa5f3839d0800000000000000
+      internalID: -2794413908818898657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_23
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 88
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6989c24a74b97510800000000000000
+      internalID: 1547466384177989998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_24
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 88
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff03129c59879c30800000000000000
+      internalID: 4366109394439704564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_25
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 88
+        width: 36
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc2d2415f0bde850800000000000000
+      internalID: 6407972411470064828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_26
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 88
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188072cae03bf0890800000000000000
+      internalID: -7489570779694692223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_27
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 30
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e81ecbba411a9a0800000000000000
+      internalID: -6223670482208453070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_28
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 37
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4574afd2afaaa250800000000000000
+      internalID: 5956766571222562127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_29
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 48
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8ae5ae8ec7c4b70800000000000000
+      internalID: 8884613504701474987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_30
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 37
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d2ad8d3d93270d0800000000000000
+      internalID: -3426612784436466344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_31
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 30
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f699c12cc0485f50800000000000000
+      internalID: 6870312477038057201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 16
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210c5eeca861d80e0800000000000000
+      internalID: -2266130252065030126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 16
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f135cb92ba5affa0800000000000000
+      internalID: -5766196649730428429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 16
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f2e26eedbeb2c30800000000000000
+      internalID: 4335818408851287915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_35
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 16
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2123add9919dd02d0800000000000000
+      internalID: -3310751447001714158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_36
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 16
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54857f99c2bae6e40800000000000000
+      internalID: 5651642790446585925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_37
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 16
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a41243bdb4d1290800000000000000
+      internalID: -7918089165002946033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_38
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 16
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77693e8324baa45b0800000000000000
+      internalID: -5383302103657376137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_39
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 17
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ff0e2b80760d570800000000000000
+      internalID: 8489398584651874058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_40
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 17
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd49cc6746f79520800000000000000
+      internalID: 2708904487514885557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_41
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 17
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a88d58589d47d40800000000000000
+      internalID: 5581325005718325894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_42
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 16
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e79ebfffe6d9b80800000000000000
+      internalID: -8386424885371896242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_43
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 22
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589fb59711972b430800000000000000
+      internalID: 3797230551784225157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_44
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 22
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65e529afb602aae0800000000000000
+      internalID: -1539660702360935059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_45
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 17
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72866b3bba4417c70800000000000000
+      internalID: 8967023837316540455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_46
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 17
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8203950c499889810800000000000000
+      internalID: 1772317725345525800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_47
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 18
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2b2198e3420c700800000000000000
+      internalID: 558486204800217854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_48
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 17
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff85e464d0b528c0800000000000000
+      internalID: -4024616265713348613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_49
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 17
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622bc86fca9bafcc0800000000000000
+      internalID: -3676421993272659418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_50
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 18
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff8da671e3beb0f0800000000000000
+      internalID: -1099243478091722761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_51
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 17
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08393cea9f247220800000000000000
+      internalID: 2482661637022627851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_52
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 16
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e7d42f1ad4b0270800000000000000
+      internalID: 8217747303017840239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_53
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 17
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af819907f5bd9240800000000000000
+      internalID: 4800192850468900771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_54
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 13
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4e4eee7694ce010800000000000000
+      internalID: 1219430309848999160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_55
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 5
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c64f4102cb8d0e90800000000000000
+      internalID: -7057831375657810236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_56
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 2
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baca66259c2ab0530800000000000000
+      internalID: 3822327694308584619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_57
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a5ce8adda560850800000000000000
+      internalID: 6342857033266256459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_58
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c648778c07d7a6b0800000000000000
+      internalID: -5285019188883601726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_59
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78825948b2839130800000000000000
+      internalID: 3572342657450674298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_60
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddbf7aedf5964190800000000000000
+      internalID: -7978524772046750241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_61
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 4
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80878b89cfd1f820800000000000000
+      internalID: 2950385287626719373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_62
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0138740dbe4bbd880800000000000000
+      internalID: -8585069339747056880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_63
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ea9f683522b9a30800000000000000
+      internalID: 4223006817732111953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_64
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fb0fa7dfac0f060800000000000000
+      internalID: 6985306212089773964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_65
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efb8ec478ceae5c0800000000000000
+      internalID: -4185272837832392731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_66
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 4
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabb1849c2cc105b0800000000000000
+      internalID: -5403813586025727060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Menu MC Animation copy_67
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e3a27fefb908cf0800000000000000
+      internalID: -252030059762008527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dynamic Menu MC Animation copy_0: -4340861223791395822
+      Dynamic Menu MC Animation copy_1: 9101109474520331047
+      Dynamic Menu MC Animation copy_10: 6408667135745661494
+      Dynamic Menu MC Animation copy_11: -8292469820444067248
+      Dynamic Menu MC Animation copy_12: -5094306102068388434
+      Dynamic Menu MC Animation copy_13: 1873916234411411067
+      Dynamic Menu MC Animation copy_14: 4025611792148685056
+      Dynamic Menu MC Animation copy_15: 3669175821713546700
+      Dynamic Menu MC Animation copy_16: 7472392219142329475
+      Dynamic Menu MC Animation copy_17: 2698840729761225661
+      Dynamic Menu MC Animation copy_18: -800321091464860980
+      Dynamic Menu MC Animation copy_19: -840345047338638584
+      Dynamic Menu MC Animation copy_2: -3121001677457506117
+      Dynamic Menu MC Animation copy_20: 2046368677143640693
+      Dynamic Menu MC Animation copy_21: 6792133724940072589
+      Dynamic Menu MC Animation copy_22: -2794413908818898657
+      Dynamic Menu MC Animation copy_23: 1547466384177989998
+      Dynamic Menu MC Animation copy_24: 4366109394439704564
+      Dynamic Menu MC Animation copy_25: 6407972411470064828
+      Dynamic Menu MC Animation copy_26: -7489570779694692223
+      Dynamic Menu MC Animation copy_27: -6223670482208453070
+      Dynamic Menu MC Animation copy_28: 5956766571222562127
+      Dynamic Menu MC Animation copy_29: 8884613504701474987
+      Dynamic Menu MC Animation copy_3: -9017373169594640058
+      Dynamic Menu MC Animation copy_30: -3426612784436466344
+      Dynamic Menu MC Animation copy_31: 6870312477038057201
+      Dynamic Menu MC Animation copy_32: -2266130252065030126
+      Dynamic Menu MC Animation copy_33: -5766196649730428429
+      Dynamic Menu MC Animation copy_34: 4335818408851287915
+      Dynamic Menu MC Animation copy_35: -3310751447001714158
+      Dynamic Menu MC Animation copy_36: 5651642790446585925
+      Dynamic Menu MC Animation copy_37: -7918089165002946033
+      Dynamic Menu MC Animation copy_38: -5383302103657376137
+      Dynamic Menu MC Animation copy_39: 8489398584651874058
+      Dynamic Menu MC Animation copy_4: 615201686270981998
+      Dynamic Menu MC Animation copy_40: 2708904487514885557
+      Dynamic Menu MC Animation copy_41: 5581325005718325894
+      Dynamic Menu MC Animation copy_42: -8386424885371896242
+      Dynamic Menu MC Animation copy_43: 3797230551784225157
+      Dynamic Menu MC Animation copy_44: -1539660702360935059
+      Dynamic Menu MC Animation copy_45: 8967023837316540455
+      Dynamic Menu MC Animation copy_46: 1772317725345525800
+      Dynamic Menu MC Animation copy_47: 558486204800217854
+      Dynamic Menu MC Animation copy_48: -4024616265713348613
+      Dynamic Menu MC Animation copy_49: -3676421993272659418
+      Dynamic Menu MC Animation copy_5: -3058690026594539652
+      Dynamic Menu MC Animation copy_50: -1099243478091722761
+      Dynamic Menu MC Animation copy_51: 2482661637022627851
+      Dynamic Menu MC Animation copy_52: 8217747303017840239
+      Dynamic Menu MC Animation copy_53: 4800192850468900771
+      Dynamic Menu MC Animation copy_54: 1219430309848999160
+      Dynamic Menu MC Animation copy_55: -7057831375657810236
+      Dynamic Menu MC Animation copy_56: 3822327694308584619
+      Dynamic Menu MC Animation copy_57: 6342857033266256459
+      Dynamic Menu MC Animation copy_58: -5285019188883601726
+      Dynamic Menu MC Animation copy_59: 3572342657450674298
+      Dynamic Menu MC Animation copy_6: -2368807938886170315
+      Dynamic Menu MC Animation copy_60: -7978524772046750241
+      Dynamic Menu MC Animation copy_61: 2950385287626719373
+      Dynamic Menu MC Animation copy_62: -8585069339747056880
+      Dynamic Menu MC Animation copy_63: 4223006817732111953
+      Dynamic Menu MC Animation copy_64: 6985306212089773964
+      Dynamic Menu MC Animation copy_65: -4185272837832392731
+      Dynamic Menu MC Animation copy_66: -5403813586025727060
+      Dynamic Menu MC Animation copy_67: -252030059762008527
+      Dynamic Menu MC Animation copy_7: -3273441058544111262
+      Dynamic Menu MC Animation copy_8: 1562444299539812135
+      Dynamic Menu MC Animation copy_9: 1742385648000055461
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
