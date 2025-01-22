@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      enemy sprite sheet copy_0: -7444288206774985877
+      enemy sprite sheet copy_1: 2220686275918034082
+      enemy sprite sheet copy_2: 1017513044386709703
+      enemy sprite sheet copy_3: 7974592504969919135
+      enemy sprite sheet copy_4: -5188734768817578231
+      enemy sprite sheet copy_5: -8949172760446691490
+      enemy sprite sheet copy_6: -2776071131035724287
+      enemy sprite sheet copy_7: -8359920063747209408
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
