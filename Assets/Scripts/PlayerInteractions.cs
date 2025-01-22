@@ -132,7 +132,10 @@ public class PlayerInteractions : MonoBehaviour
 
         if(collision.gameObject.CompareTag("Exit"))
         {
-            SceneManager.LoadScene("Level02-Test");
+            if(GameObject.Find("coin") == null)
+            {
+                SceneManager.LoadScene("Level02-Test");
+            }
         }
     }
 }
