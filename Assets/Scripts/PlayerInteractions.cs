@@ -9,10 +9,12 @@ public class PlayerInteractions : MonoBehaviour
     bool inSleepZone;
     bool inPuzzleZone;
     public float timer;
+    public TMP_Text coinsText;
 
     public GameObject deathPanel;
     public GameObject safePanel;
     public GameObject puzzlePanel;
+    public GameObject capturePanel;
     public Slider sleepBar;
 
     public GameObject camera;
@@ -20,6 +22,8 @@ public class PlayerInteractions : MonoBehaviour
     public int puzzle01;
     public int puzzle02;
     public int puzzle03;
+
+    int numberOfCoins;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,11 +31,14 @@ public class PlayerInteractions : MonoBehaviour
         deathPanel.SetActive(false);
         safePanel.SetActive(false);
         puzzlePanel.SetActive(false);
+        capturePanel.SetActive(false);
+        numberOfCoins = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        coinsText.text = "" + numberOfCoins;
         Debug.Log(puzzle01);
         if(timer > 0)
         {
@@ -70,7 +77,13 @@ public class PlayerInteractions : MonoBehaviour
 
         if(collision.CompareTag("Exit"))
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Level02-Test");
+        }
+
+        if(collision.CompareTag("coin"))
+        {
+            numberOfCoins ++;
+            Destroy(collision.gameObject);
         }
     }
 
@@ -85,6 +98,7 @@ public class PlayerInteractions : MonoBehaviour
         {
             inPuzzleZone = false;
         }
+
     }
 
     IEnumerator CheckZone()
@@ -105,6 +119,15 @@ public class PlayerInteractions : MonoBehaviour
         {
             yield return new WaitForSeconds(2);
             deathPanel.SetActive(true);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("enemy"))
+        {
+            Debug.Log("touched");
+            capturePanel.SetActive(true);
         }
     }
 }

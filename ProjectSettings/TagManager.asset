@@ -10,6 +10,8 @@ TagManager:
   - UpDown
   - LeftRight
   - puzzle01
+  - enemy
+  - coin
   layers:
   - Default
   - TransparentFX
