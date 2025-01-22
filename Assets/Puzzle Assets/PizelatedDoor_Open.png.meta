@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PizelatedDoor_Open_0: -4735480941282074756
+      PizelatedDoor_Open_1: -2479586952423617080
+      PizelatedDoor_Open_10: -7721123923869386599
+      PizelatedDoor_Open_11: -8696717252066882830
+      PizelatedDoor_Open_2: 4004260284267674453
+      PizelatedDoor_Open_3: -480238306273591372
+      PizelatedDoor_Open_4: -2120500989538360296
+      PizelatedDoor_Open_5: -2754018602023575823
+      PizelatedDoor_Open_6: -3555728491153751396
+      PizelatedDoor_Open_7: -1175109194194165500
+      PizelatedDoor_Open_8: 2182152826490654084
+      PizelatedDoor_Open_9: -4791445048608997687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
