@@ -195,7 +195,7 @@ public class PlayerInteractions : MonoBehaviour
     void ChoosePuzzle()
     {
         StopCoroutine(CheckZone());
-        if(SceneManager.GetActiveScene().name == "Level01-Test")
+        if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level02-Test")
         {
             int randomPuzzle = Random.Range(1,4);
 
