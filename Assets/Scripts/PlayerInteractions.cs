@@ -23,7 +23,7 @@ public class PlayerInteractions : MonoBehaviour
     public int puzzle02;
     public int puzzle03;
 
-    int numberOfCoins;
+    static int numberOfCoins;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,7 +32,10 @@ public class PlayerInteractions : MonoBehaviour
         safePanel.SetActive(false);
         puzzlePanel.SetActive(false);
         capturePanel.SetActive(false);
-        numberOfCoins = 0;
+        if(SceneManager.GetActiveScene().name == "Level01-Test")
+        {
+            numberOfCoins = 0;
+        }
     }
 
     // Update is called once per frame
@@ -75,16 +78,7 @@ public class PlayerInteractions : MonoBehaviour
             inPuzzleZone = true;
         }
 
-        if(collision.CompareTag("Exit"))
-        {
-            SceneManager.LoadScene("Level02-Test");
-        }
 
-        if(collision.CompareTag("coin"))
-        {
-            numberOfCoins ++;
-            Destroy(collision.gameObject);
-        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -128,6 +122,17 @@ public class PlayerInteractions : MonoBehaviour
         {
             Debug.Log("touched");
             capturePanel.SetActive(true);
+        }
+
+        if(collision.gameObject.CompareTag("coin"))
+        {
+            numberOfCoins ++;
+            Destroy(collision.gameObject);
+        }
+
+        if(collision.gameObject.CompareTag("Exit"))
+        {
+            SceneManager.LoadScene("Level02-Test");
         }
     }
 }
