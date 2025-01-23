@@ -111,7 +111,14 @@ public class PlayerInteractions : MonoBehaviour
             puzzle01 = 0;
             puzzle02 = 0;
             puzzle03 = 0;
-            timer = 10f;
+            if(SceneManager.GetActiveScene().name == "Level01-Test")
+            {
+                timer = 15f;
+            }
+            else if(SceneManager.GetActiveScene().name == "Level02-Test")
+            {
+                timer = 10f;
+            }
             sleepBar.maxValue = timer;
         }
 
@@ -155,7 +162,14 @@ public class PlayerInteractions : MonoBehaviour
             safePanel.SetActive(true);
             yield return new WaitForSeconds(5);
             safePanel.SetActive(false);
-            timer = 5f;
+            if(SceneManager.GetActiveScene().name == "Level01-Test")
+            {
+                timer = 15f;
+            }
+            else if(SceneManager.GetActiveScene().name == "Level02-Test")
+            {
+                timer = 10f;
+            }
             sleepBar.maxValue = timer;
         }
         else if(inPuzzleZone && !inSleepZone)
@@ -165,7 +179,7 @@ public class PlayerInteractions : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(0);
             deathPanel.SetActive(true);
         }
     }
@@ -188,7 +202,14 @@ public class PlayerInteractions : MonoBehaviour
         {
             if(GameObject.Find("coin") == null)
             {
-                SceneManager.LoadScene("Level02-Test");
+                if(SceneManager.GetActiveScene().name == "Level01-Test")
+                {
+                    SceneManager.LoadScene("Level02-Test");
+                }
+                else if(SceneManager.GetActiveScene().name == "Level02-Test")
+                {
+                    SceneManager.LoadScene("Credits");
+                }
             }
         }
     }
@@ -256,9 +277,16 @@ public class PlayerInteractions : MonoBehaviour
             puzzlePanel02P3.SetActive(false);
             puzzleTimerObject.SetActive(false);
             inPuzzle = false;
-            timer = 10f;
-            sleepBar.maxValue = timer;
             partOfPuzzle = 0;
+            if(SceneManager.GetActiveScene().name == "Level01-Test")
+            {
+                timer = 15f;
+            }
+            else if(SceneManager.GetActiveScene().name == "Level02-Test")
+            {
+                timer = 10f;
+            }
+            sleepBar.maxValue = timer;
         }
         
     }
@@ -302,7 +330,14 @@ public class PlayerInteractions : MonoBehaviour
         yield return new WaitForSeconds(3);
         puzzlePanel03.SetActive(false);
         inPuzzle = false;
-        timer = 10f;
+        if(SceneManager.GetActiveScene().name == "Level01-Test")
+        {
+            timer = 15f;
+        }
+        else if(SceneManager.GetActiveScene().name == "Level02-Test")
+        {
+            timer = 10f;
+        }
         sleepBar.maxValue = timer;
     }
 }
