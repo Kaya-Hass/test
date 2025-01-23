@@ -32,4 +32,12 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Exit")
+        {
+            SceneManager.LoadScene("Level02-Test");
+        }
+    }
 }
