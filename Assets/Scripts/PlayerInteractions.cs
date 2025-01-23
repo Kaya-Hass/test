@@ -112,6 +112,7 @@ public class PlayerInteractions : MonoBehaviour
             puzzle02 = 0;
             puzzle03 = 0;
             timer = 10f;
+            sleepBar.maxValue = timer;
         }
 
     }
@@ -276,6 +277,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         EventSystem.current.currentSelectedGameObject.SetActive(false);
         puzzleTimerObject.SetActive(false);
+        inPuzzle = false;
         StartCoroutine(DisplayEnemy());
     }
 
@@ -283,6 +285,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         EventSystem.current.currentSelectedGameObject.SetActive(false);
         puzzleTimerObject.SetActive(false);
+        inPuzzle = false;
         StartCoroutine(DisplaySafe());
     }
 
