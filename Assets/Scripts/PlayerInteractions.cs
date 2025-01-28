@@ -21,6 +21,7 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject puzzlePanel02;
     public GameObject puzzlePanel02P2;
     public GameObject puzzlePanel02P3;
+    public GameObject puzzlePanel02P4;
     public GameObject puzzlePanel03;
     public GameObject capturePanel;
     public GameObject door01;
@@ -40,10 +41,12 @@ public class PlayerInteractions : MonoBehaviour
     Vector3 initPiece01;
     Vector3 initPiece02;
     Vector3 initPiece03;
+    Vector3 initPiece04;
 
     public GameObject piece01;
     public GameObject piece02;
     public GameObject piece03;
+    public GameObject piece04;
 
     bool inPuzzle;
 
@@ -51,6 +54,27 @@ public class PlayerInteractions : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if(SceneManager.GetActiveScene().name == "Level01-Test")
+        {
+            timer = 15f;
+        }
+        else if(SceneManager.GetActiveScene().name == "Level02-Test")
+        {
+            timer = 10f;
+        }
+        else if(SceneManager.GetActiveScene().name == "Level03-Test")
+        {
+            
+        }
+
+        initPiece01 = piece01.gameObject.transform.position;
+        initPiece02 = piece02.gameObject.transform.position;
+        initPiece03 = piece03.gameObject.transform.position;
+        if(SceneManager.GetActiveScene().name == "Level02-Test")
+        {
+            initPiece04 = piece04.gameObject.transform.position;
+        }
+
         puzzleTimerObject.SetActive(false);
         sleepBar.maxValue = timer;
         deathPanel.SetActive(false);
@@ -61,20 +85,31 @@ public class PlayerInteractions : MonoBehaviour
         puzzlePanel02.SetActive(false);
         puzzlePanel03.SetActive(false);
         capturePanel.SetActive(false);
-        if(SceneManager.GetActiveScene().name == "Level01-Test")
+
+        if(SceneManager.GetActiveScene().name == "Level02-Test")
         {
-            numberOfCoins = 0;
+            puzzlePanel02P4.SetActive(false);
         }
+        numberOfCoins = 0;
         partOfPuzzle = 0;
-        initPiece01 = piece01.gameObject.transform.position;
-        initPiece02 = piece02.gameObject.transform.position;
-        initPiece03 = piece03.gameObject.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        coinsText.text = "" + numberOfCoins;
+        if(SceneManager.GetActiveScene().name == "Level01-Test")
+        {
+            coinsText.text = numberOfCoins + "/3";
+        }
+        else if(SceneManager.GetActiveScene().name == "Level02-Test")
+        {
+            coinsText.text = numberOfCoins + "/6";
+        }
+        else if(SceneManager.GetActiveScene().name == "Level03-Test")
+        {
+            
+        }
+        
         if(timer > 0)
         {
             timer -= Time.deltaTime;
@@ -216,7 +251,6 @@ public class PlayerInteractions : MonoBehaviour
 
     void ChoosePuzzle()
     {
-        StopCoroutine(CheckZone());
         if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level02-Test")
         {
             int randomPuzzle = Random.Range(1,4);
@@ -227,17 +261,44 @@ public class PlayerInteractions : MonoBehaviour
                 puzzlePanel01.SetActive(true);
                 puzzleTimerObject.SetActive(true);
                 inPuzzle = true;
-                puzzleTimer = 7f;
+                if(SceneManager.GetActiveScene().name == "Level01-Test")
+                {
+                    puzzleTimer = 7f;
+                }
+                else if(SceneManager.GetActiveScene().name == "Level02-Test")
+                {
+                    puzzleTimer = 8f;
+                }
+                else if(SceneManager.GetActiveScene().name == "Level03-Test")
+                {
+                    puzzleTimer = 9f;
+                }
                 piece01.transform.position = initPiece01;
                 piece02.transform.position = initPiece02;
                 piece03.transform.position = initPiece03;
+
+                if(SceneManager.GetActiveScene().name == "Level02-Test")
+                {
+                    piece04.transform.position = initPiece04;
+                }
                 break;
 
                 case 2:
                 inPuzzle = true;
                 puzzlePanel02.SetActive(true);
                 puzzleTimerObject.SetActive(true);
-                puzzleTimer = 5f;
+                if(SceneManager.GetActiveScene().name == "Level01-Test")
+                {
+                    puzzleTimer = 5f;
+                }
+                else if(SceneManager.GetActiveScene().name == "Level02-Test")
+                {
+                    puzzleTimer = 7f;
+                }
+                else if(SceneManager.GetActiveScene().name == "Level03-Test")
+                {
+                    puzzleTimer = 9f;
+                }
                 partOfPuzzle ++;
                 break;
 
@@ -274,18 +335,29 @@ public class PlayerInteractions : MonoBehaviour
         }
         else if(partOfPuzzle == 3)
         {
-            puzzlePanel02P3.SetActive(false);
-            puzzleTimerObject.SetActive(false);
-            inPuzzle = false;
-            partOfPuzzle = 0;
             if(SceneManager.GetActiveScene().name == "Level01-Test")
             {
+                puzzlePanel02P3.SetActive(false);
+                puzzleTimerObject.SetActive(false);
+                inPuzzle = false;
+                partOfPuzzle = 0;
                 timer = 15f;
+                sleepBar.maxValue = timer;
             }
             else if(SceneManager.GetActiveScene().name == "Level02-Test")
             {
-                timer = 10f;
+                puzzlePanel02P3.SetActive(false);
+                puzzlePanel02P4.SetActive(true);
+                partOfPuzzle ++;
             }
+        }
+        else if(partOfPuzzle == 4)
+        {
+            puzzlePanel02P4.SetActive(false);
+            puzzleTimerObject.SetActive(false);
+            inPuzzle = false;
+            partOfPuzzle = 0;
+            timer = 10f;
             sleepBar.maxValue = timer;
         }
         

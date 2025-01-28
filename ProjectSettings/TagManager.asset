@@ -16,6 +16,8 @@ TagManager:
   - Orange
   - Pink
   - Door
+  - puzzle02
+  - puzzle03
   layers:
   - Default
   - TransparentFX

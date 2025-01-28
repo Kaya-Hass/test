@@ -2297,7 +2297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -389.84998, y: -5.7669983}
+  m_AnchoredPosition: {x: -658, y: 64}
   m_SizeDelta: {x: 952, y: 1177}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &159966756
@@ -2659,7 +2659,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressRightHeart
+        m_MethodName: PressWrongHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3069,6 +3069,7 @@ MonoBehaviour:
   puzzlePanel02: {fileID: 341729070}
   puzzlePanel02P2: {fileID: 1723718596}
   puzzlePanel02P3: {fileID: 1391195664}
+  puzzlePanel02P4: {fileID: 709672032}
   puzzlePanel03: {fileID: 1187654781}
   capturePanel: {fileID: 29273796}
   door01: {fileID: 2074546987}
@@ -3082,6 +3083,7 @@ MonoBehaviour:
   piece01: {fileID: 1657744246}
   piece02: {fileID: 1863912435}
   piece03: {fileID: 159966754}
+  piece04: {fileID: 1483802123}
 --- !u!114 &266552574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3371,7 +3373,7 @@ GameObject:
   - component: {fileID: 289076748}
   m_Layer: 5
   m_Name: shadow (1)
-  m_TagString: puzzle01
+  m_TagString: puzzle02
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4036,7 +4038,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressRightHeart
+        m_MethodName: PressWrongHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4381,7 +4383,7 @@ GameObject:
   - component: {fileID: 531381322}
   m_Layer: 5
   m_Name: shadow
-  m_TagString: puzzle01
+  m_TagString: puzzle02
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4843,7 +4845,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressRightHeart
+        m_MethodName: PressWrongHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4903,7 +4905,7 @@ GameObject:
   - component: {fileID: 709672035}
   - component: {fileID: 709672034}
   m_Layer: 5
-  m_Name: Puzzle02P3 (1)
+  m_Name: Puzzle02P4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5187,7 +5189,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressRightHeart
+        m_MethodName: PressWrongHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5868,16 +5870,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014178212}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.55795, y: 0.16736268, z: 0.55795}
+  m_LocalScale: {x: 0.54768556, y: 0.16736268, z: 0.5579501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1049773646}
+  m_Father: {fileID: 1706637581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -3.6}
+  m_AnchoredPosition: {x: -0.9, y: -3.6000004}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014178214
@@ -5980,7 +5982,7 @@ RectTransform:
   m_LocalScale: {x: 2.278535, y: 11.222989, z: 2.5555}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1014178213}
+  - {fileID: 1743556098}
   - {fileID: 2074546988}
   m_Father: {fileID: 1187654782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6433,7 +6435,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressSafeDoor
+        m_MethodName: PressEnemyDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7033,7 +7035,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressWrongHeart
+        m_MethodName: PressRightHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16495,7 +16497,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressWrongHeart
+        m_MethodName: PressRightHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16806,7 +16808,7 @@ GameObject:
   - component: {fileID: 1364947051}
   m_Layer: 5
   m_Name: shadow
-  m_TagString: puzzle01
+  m_TagString: puzzle02
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17080,7 +17082,7 @@ Transform:
   m_GameObject: {fileID: 1424398371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.64, y: -4.24, z: -1}
+  m_LocalPosition: {x: 9.73, y: -0.01, z: -1}
   m_LocalScale: {x: 0.38128, y: 0.38128, z: 0.38128}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17122,7 +17124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -664.595, y: 95.801}
+  m_AnchoredPosition: {x: -393, y: -370}
   m_SizeDelta: {x: 952, y: 1177}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1483802125
@@ -17947,7 +17949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -481, y: -149}
+  m_AnchoredPosition: {x: -343, y: 294}
   m_SizeDelta: {x: 1767, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1657744248
@@ -18313,7 +18315,7 @@ RectTransform:
   m_LocalScale: {x: 2.3212373, y: 11.222989, z: 2.5555}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1743556098}
+  - {fileID: 1014178213}
   - {fileID: 1157953442}
   m_Father: {fileID: 1187654782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18580,7 +18582,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressWrongHeart
+        m_MethodName: PressRightHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18844,7 +18846,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 436286218}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: RestartLevel2
+        m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18919,14 +18921,14 @@ RectTransform:
   m_GameObject: {fileID: 1743556097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5476856, y: 0.12970273, z: 0.5579501}
+  m_LocalScale: {x: 0.5579499, y: 0.12970273, z: 0.5579501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1706637581}
+  m_Father: {fileID: 1049773646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.3, y: -4.1}
+  m_AnchoredPosition: {x: 1.8, y: -4.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743556099
@@ -19707,7 +19709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -806.522, y: -155.51}
+  m_AnchoredPosition: {x: -211, y: -59}
   m_SizeDelta: {x: 2100, y: 639}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1863912437
@@ -20307,7 +20309,7 @@ GameObject:
   - component: {fileID: 1991946020}
   m_Layer: 5
   m_Name: shadow
-  m_TagString: puzzle01
+  m_TagString: puzzle02
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20684,7 +20686,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressEnemyDoor
+        m_MethodName: PressSafeDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21069,7 +21071,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 266552573}
         m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
-        m_MethodName: PressRightHeart
+        m_MethodName: PressWrongHeart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

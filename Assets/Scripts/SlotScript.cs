@@ -17,6 +17,16 @@ public class SlotScript : MonoBehaviour, IDropHandler
                     playerStats.puzzle01 += 1;
                     eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = this.GetComponent<RectTransform>().anchoredPosition;
                 }
+                else if(gameObject.CompareTag("puzzle02"))
+                {
+                    playerStats.puzzle02 += 1;
+                    eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = this.GetComponent<RectTransform>().anchoredPosition;
+                }
+                else if(gameObject.CompareTag("puzzle03"))
+                {
+                    playerStats.puzzle03 += 1;
+                    eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = this.GetComponent<RectTransform>().anchoredPosition;
+                }
             }
             else
             {
