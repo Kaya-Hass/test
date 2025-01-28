@@ -64,7 +64,7 @@ public class PlayerInteractions : MonoBehaviour
         }
         else if(SceneManager.GetActiveScene().name == "Level03-Test")
         {
-            
+            timer = 10f;
         }
 
         initPiece01 = piece01.gameObject.transform.position;
@@ -86,7 +86,7 @@ public class PlayerInteractions : MonoBehaviour
         puzzlePanel03.SetActive(false);
         capturePanel.SetActive(false);
 
-        if(SceneManager.GetActiveScene().name == "Level02-Test")
+        if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
         {
             puzzlePanel02P4.SetActive(false);
         }
@@ -107,7 +107,7 @@ public class PlayerInteractions : MonoBehaviour
         }
         else if(SceneManager.GetActiveScene().name == "Level03-Test")
         {
-            
+            coinsText.text = numberOfCoins + "/5";
         }
         
         if(timer > 0)
