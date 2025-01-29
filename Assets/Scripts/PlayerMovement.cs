@@ -8,18 +8,53 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movementDirection;
+    Animator animator;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            animator.SetBool("backward", true);
+        }
+        else if(Input.GetKeyDown(KeyCode.A))
+        {
+            animator.SetBool("left", true);
+        }
+        else if(Input.GetKeyDown(KeyCode.S))
+        {
+            animator.SetBool("forward", true);
+        }
+        else if(Input.GetKeyDown(KeyCode.D))
+        {
+            animator.SetBool("right", true);
+        }
+
+        if(Input.GetKeyUp(KeyCode.W))
+        {
+            animator.SetBool("backward", false);
+        }
+        else if(Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetBool("left", false);
+        }
+        else if(Input.GetKeyUp(KeyCode.S))
+        {
+            animator.SetBool("forward", false);
+        }
+        else if(Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetBool("right", false);
+        }
     }
 
     void FixedUpdate()
