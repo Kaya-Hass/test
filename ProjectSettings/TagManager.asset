@@ -20,6 +20,7 @@ TagManager:
   - puzzle03
   - speed
   - time
+  - Music
   layers:
   - Default
   - TransparentFX
