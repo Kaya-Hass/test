@@ -22,6 +22,7 @@ public class PlayerInteractions : MonoBehaviour
     public GameObject puzzlePanel02P2;
     public GameObject puzzlePanel02P3;
     public GameObject puzzlePanel02P4;
+    public GameObject puzzlePanel02P5;
     public GameObject puzzlePanel03;
     public GameObject capturePanel;
     public GameObject door01;
@@ -42,11 +43,13 @@ public class PlayerInteractions : MonoBehaviour
     Vector3 initPiece02;
     Vector3 initPiece03;
     Vector3 initPiece04;
+    Vector3 initPiece05;
 
     public GameObject piece01;
     public GameObject piece02;
     public GameObject piece03;
     public GameObject piece04;
+    public GameObject piece05;
 
     bool inPuzzle;
 
@@ -70,9 +73,13 @@ public class PlayerInteractions : MonoBehaviour
         initPiece01 = piece01.gameObject.transform.position;
         initPiece02 = piece02.gameObject.transform.position;
         initPiece03 = piece03.gameObject.transform.position;
-        if(SceneManager.GetActiveScene().name == "Level02-Test")
+        if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
         {
             initPiece04 = piece04.gameObject.transform.position;
+        }
+        if(SceneManager.GetActiveScene().name == "Level03-Test")
+        {
+            initPiece05 = piece05.gameObject.transform.position;
         }
 
         puzzleTimerObject.SetActive(false);
@@ -89,6 +96,10 @@ public class PlayerInteractions : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
         {
             puzzlePanel02P4.SetActive(false);
+        }
+        if(SceneManager.GetActiveScene().name == "Level03-Test")
+        {
+            puzzlePanel02P5.SetActive(false);
         }
         numberOfCoins = 0;
         partOfPuzzle = 0;
@@ -192,12 +203,13 @@ public class PlayerInteractions : MonoBehaviour
 
     IEnumerator CheckZone()
     {
+        Debug.Log("Checking");
         if(inSleepZone)
         {
             safePanel.SetActive(true);
             yield return new WaitForSeconds(5);
             safePanel.SetActive(false);
-            if(SceneManager.GetActiveScene().name == "Level01-Test")
+            if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
             {
                 timer = 15f;
             }
@@ -210,6 +222,7 @@ public class PlayerInteractions : MonoBehaviour
         else if(inPuzzleZone && !inSleepZone)
         {
             yield return new WaitForSeconds(0);
+            Debug.Log("inpuzzle checked");
             ChoosePuzzle();
         }
         else
@@ -251,14 +264,16 @@ public class PlayerInteractions : MonoBehaviour
 
     void ChoosePuzzle()
     {
-        if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level02-Test")
+        if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
         {
             int randomPuzzle = Random.Range(1,4);
+            Debug.Log("random chosen");
 
             switch(randomPuzzle)
             {
                 case 1:
                 puzzlePanel01.SetActive(true);
+                Debug.Log("yes");
                 puzzleTimerObject.SetActive(true);
                 inPuzzle = true;
                 if(SceneManager.GetActiveScene().name == "Level01-Test")
@@ -277,15 +292,20 @@ public class PlayerInteractions : MonoBehaviour
                 piece02.transform.position = initPiece02;
                 piece03.transform.position = initPiece03;
 
-                if(SceneManager.GetActiveScene().name == "Level02-Test")
+                if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
                 {
                     piece04.transform.position = initPiece04;
+                }
+                if(SceneManager.GetActiveScene().name == "Level03-Test")
+                {
+                    piece05.transform.position = initPiece05;
                 }
                 break;
 
                 case 2:
                 inPuzzle = true;
                 puzzlePanel02.SetActive(true);
+                Debug.Log("yesu");
                 puzzleTimerObject.SetActive(true);
                 if(SceneManager.GetActiveScene().name == "Level01-Test")
                 {
@@ -305,6 +325,7 @@ public class PlayerInteractions : MonoBehaviour
                 case 3:
                 inPuzzle = true;
                 puzzlePanel03.SetActive(true);
+                Debug.Log("yeso");
                 puzzleTimerObject.SetActive(true);
                 door01.SetActive(true);
                 door02.SetActive(true);
@@ -312,10 +333,6 @@ public class PlayerInteractions : MonoBehaviour
                 puzzleTimer = 5f;
                 break;
             }
-        }
-        else if(SceneManager.GetActiveScene().name == "Level02-Test")
-        {
-
         }
     }
 
@@ -344,7 +361,7 @@ public class PlayerInteractions : MonoBehaviour
                 timer = 15f;
                 sleepBar.maxValue = timer;
             }
-            else if(SceneManager.GetActiveScene().name == "Level02-Test")
+            else if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
             {
                 puzzlePanel02P3.SetActive(false);
                 puzzlePanel02P4.SetActive(true);
@@ -353,7 +370,25 @@ public class PlayerInteractions : MonoBehaviour
         }
         else if(partOfPuzzle == 4)
         {
-            puzzlePanel02P4.SetActive(false);
+            if(SceneManager.GetActiveScene().name == "Level02-Test")
+            {
+                puzzlePanel02P3.SetActive(false);
+                puzzleTimerObject.SetActive(false);
+                inPuzzle = false;
+                partOfPuzzle = 0;
+                timer = 10f;
+                sleepBar.maxValue = timer;
+            }
+            else if(SceneManager.GetActiveScene().name == "Level03-Test")
+            {
+                puzzlePanel02P4.SetActive(false);
+                puzzlePanel02P5.SetActive(true);
+                partOfPuzzle ++;
+            }
+        }
+        else if(partOfPuzzle == 5)
+        {
+            puzzlePanel02P5.SetActive(false);
             puzzleTimerObject.SetActive(false);
             inPuzzle = false;
             partOfPuzzle = 0;
