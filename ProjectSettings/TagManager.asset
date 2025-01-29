@@ -18,6 +18,8 @@ TagManager:
   - Door
   - puzzle02
   - puzzle03
+  - speed
+  - time
   layers:
   - Default
   - TransparentFX

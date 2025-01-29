@@ -53,6 +53,8 @@ public class PlayerInteractions : MonoBehaviour
 
     bool inPuzzle;
 
+    public PlayerMovement playerMovement;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -246,6 +248,18 @@ public class PlayerInteractions : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        if(collision.gameObject.CompareTag("speed"))
+        {
+            Destroy(collision.gameObject);
+            StartCoroutine(BoostSpeed());
+        }
+
+        if(collision.gameObject.CompareTag("time"))
+        {
+            Destroy(collision.gameObject);
+            timer += 4f;
+        }
+
         if(collision.gameObject.CompareTag("Exit"))
         {
             if(GameObject.Find("coin") == null)
@@ -260,6 +274,14 @@ public class PlayerInteractions : MonoBehaviour
                 }
             }
         }
+    }
+
+    IEnumerator BoostSpeed()
+    {
+        playerMovement.movementSpeed += 3f;
+        yield return new WaitForSeconds(5);
+        playerMovement.movementSpeed -= 3f;
+
     }
 
     void ChoosePuzzle()
