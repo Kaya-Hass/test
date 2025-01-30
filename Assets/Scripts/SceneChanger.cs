@@ -87,6 +87,7 @@ public class SceneChanger : MonoBehaviour
         else if(other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level02-Test")
         {
             StartCoroutine(LoadScene("Level03-Test"));
+           
         }
         else if(other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level03-Test")
         {
