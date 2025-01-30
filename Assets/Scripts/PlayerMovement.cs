@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementDirection;
     Animator animator;
+    AudioSource sfx;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sfx = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -25,18 +28,22 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.W))
         {
             animator.SetBool("backward", true);
+            sfx.volume = 0.3f;
         }
         else if(Input.GetKeyDown(KeyCode.A))
         {
             animator.SetBool("left", true);
+            sfx.volume = 0.3f;
         }
         else if(Input.GetKeyDown(KeyCode.S))
         {
             animator.SetBool("forward", true);
+            sfx.volume = 0.3f;
         }
         else if(Input.GetKeyDown(KeyCode.D))
         {
             animator.SetBool("right", true);
+            sfx.volume = 0.3f;
         }
 
         if(Input.GetKeyUp(KeyCode.W))
@@ -54,6 +61,11 @@ public class PlayerMovement : MonoBehaviour
         else if(Input.GetKeyUp(KeyCode.D))
         {
             animator.SetBool("right", false);
+        }
+
+        if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+        {
+            sfx.volume = 0;
         }
     }
 

@@ -54,6 +54,7 @@ public class PlayerInteractions : MonoBehaviour
     bool inPuzzle;
 
     public PlayerMovement playerMovement;
+    public AudioSource coinSFX;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -245,6 +246,7 @@ public class PlayerInteractions : MonoBehaviour
         if(collision.gameObject.CompareTag("coin"))
         {
             numberOfCoins ++;
+            coinSFX.Play();
             Destroy(collision.gameObject);
         }
 
