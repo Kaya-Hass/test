@@ -21,6 +21,7 @@ TagManager:
   - speed
   - time
   - Music
+  - KeyPuzzleTag
   layers:
   - Default
   - TransparentFX
