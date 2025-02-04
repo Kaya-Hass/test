@@ -9,6 +9,7 @@ public class SceneChanger : MonoBehaviour
     public CanvasGroup canvasGroup;
     public bool fadein;
     public bool fadeout;
+    public GameObject PausemenuUI;
 
     public float timeToFade;
 
@@ -49,6 +50,7 @@ public class SceneChanger : MonoBehaviour
     public void GoToMainMenu()
     {
         StartCoroutine(LoadScene("MainMenu"));
+    
     }
 
     public void GoToLevel01()
@@ -59,16 +61,24 @@ public class SceneChanger : MonoBehaviour
     public void GoToCredits()
     {
         StartCoroutine(LoadScene("Credits"));
+       
     }
 
     public void GoToHelp()
     {
         StartCoroutine(LoadScene("HelpMenu"));
+       
     }
 
     public void Quit()
     {
         Application.Quit();
+        
+    }
+
+    public void Resume()
+    {
+        PausemenuUI.SetActive(false);
     }
 
     public void RestartLevel()
