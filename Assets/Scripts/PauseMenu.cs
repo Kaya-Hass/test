@@ -1,4 +1,8 @@
+using JetBrains.Annotations;
 using UnityEngine;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+using System.Collections; 
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,9 +13,41 @@ public class PauseMenu : MonoBehaviour
     public GameObject HealthBar;
     public GameObject CoinCount;
 
+    //public bool fadein;
+    //public bool fadeout;
+
     private void Start()
     {
         PauseMenuUI.SetActive(false);
+    }
+
+    public void MainMenu()
+    {
+        
+        PauseMenuUI.SetActive(false);
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+        // StartCoroutine(LoadScene("MainMenu"));
+    }
+
+    public void LoadCredits()
+    {
+        PauseMenuUI.SetActive(false);
+        SceneManager.LoadScene("Credits");
+        Time.timeScale = 1f;
+    }
+
+    public void ResumePlay()
+    {
+        PauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        HealthBar.SetActive(true);
+        CoinCount.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     // Update is called once per frame
@@ -30,7 +66,8 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
-        void Resume()
+       
+       void Resume()
         {
             PauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
@@ -47,5 +84,14 @@ public class PauseMenu : MonoBehaviour
             HealthBar.SetActive(false);
             CoinCount.SetActive(false);
         }
+
+        
+
     }
+    //IEnumerator LoadScene(string sceneName)
+   // {
+        //fadein = true;
+       // yield return new WaitForSeconds(1);
+       // SceneManager.LoadScene(sceneName);
+   // }
 }
