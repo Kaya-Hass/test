@@ -15,10 +15,20 @@ public class SceneChanger : MonoBehaviour
 
     public AudioSource music;
 
+    bool fading;
+    bool inMain;
+
     void Start()
     {
         fadeout = true;
         Debug.Log("went through");
+
+        if(SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "HelpMenu")
+        {
+            music = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+        }
+        inMain = false;
+        StartCoroutine(MusicFadeout());
     }
     void Update()
     {
@@ -40,11 +50,6 @@ public class SceneChanger : MonoBehaviour
             if(canvasGroup.alpha >= 0)
             {
                 canvasGroup.alpha -= timeToFade * Time.deltaTime;
-                while(fadeout == true)
-                {
-                    Debug.Log("fading");
-                    music.volume += 0.01f;
-                }
                 if(canvasGroup.alpha == 0)
                 {
                     fadeout = false;
@@ -52,8 +57,29 @@ public class SceneChanger : MonoBehaviour
             }
         }
     }
+    IEnumerator MusicFadeIn()
+    {
+        while(music.volume > 0)
+        {
+            music.volume -= 0.05f;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    IEnumerator MusicFadeout()
+    {
+        while(music.volume < 0.2f)
+        {
+            music.volume += 0.005f;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
     public void GoToMainMenu()
     {
+        if(SceneManager.GetActiveScene().name == "HelpMenu")
+        {
+            inMain = true;
+        }
         StartCoroutine(LoadScene("MainMenu"));
     
     }
@@ -71,8 +97,11 @@ public class SceneChanger : MonoBehaviour
 
     public void GoToHelp()
     {
+        if(SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            inMain = true;
+        }
         StartCoroutine(LoadScene("HelpMenu"));
-       
     }
 
     public void Quit()
@@ -112,7 +141,11 @@ public class SceneChanger : MonoBehaviour
    IEnumerator LoadScene(string sceneName)
    {
        fadein = true;
-       yield return new WaitForSeconds(1);
+       if(!inMain)
+       {
+           StartCoroutine(MusicFadeIn());
+       }
+       yield return new WaitForSeconds(2);
        SceneManager.LoadScene(sceneName);
    }
 }
