@@ -55,6 +55,15 @@ public class PlayerInteractions : MonoBehaviour
 
     public PlayerMovement playerMovement;
     public AudioSource coinSFX;
+    bool asleep;
+
+    public Image fill;
+    Color initial;
+    Color red;
+
+    bool low;
+
+    public ParticleSystem speedFX;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -127,10 +136,16 @@ public class PlayerInteractions : MonoBehaviour
         if(timer > 0)
         {
             timer -= Time.deltaTime;
+            if(timer <= 5 && low != true)
+            {
+                low = true;
+                StartCoroutine(Flash());
+            }
         }
         else if(timer < 0)
         {
             timer = 0;
+            low = false;
             StartCoroutine(CheckZone());
         }
 
@@ -169,6 +184,36 @@ public class PlayerInteractions : MonoBehaviour
                 timer = 10f;
             }
             sleepBar.maxValue = timer;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space) && asleep == true)
+        {
+            safePanel.SetActive(false);
+            asleep = false;
+            if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
+            {
+                timer = 15f;
+            }
+            else if(SceneManager.GetActiveScene().name == "Level02-Test")
+            {
+                timer = 10f;
+            }
+            sleepBar.maxValue = timer;
+        }
+
+    }
+
+    IEnumerator Flash()
+    {
+        while(low == true)
+        {
+            ColorUtility.TryParseHtmlString("#FF0014", out red);
+            fill.GetComponent<Image>().color = red;
+            yield return new WaitForSeconds(0.8f);
+            ColorUtility.TryParseHtmlString("#E5B780", out initial);
+            fill.GetComponent<Image>().color = initial;
+            yield return new WaitForSeconds(0.8f);
+
         }
 
     }
@@ -210,8 +255,10 @@ public class PlayerInteractions : MonoBehaviour
         if(inSleepZone)
         {
             safePanel.SetActive(true);
+            asleep = true;
             yield return new WaitForSeconds(5);
             safePanel.SetActive(false);
+            asleep = false;
             if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
             {
                 timer = 15f;
@@ -281,8 +328,10 @@ public class PlayerInteractions : MonoBehaviour
     IEnumerator BoostSpeed()
     {
         playerMovement.movementSpeed += 3f;
+        speedFX.Play();
         yield return new WaitForSeconds(5);
         playerMovement.movementSpeed -= 3f;
+        speedFX.Stop();
 
     }
 
