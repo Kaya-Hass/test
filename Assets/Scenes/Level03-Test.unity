@@ -3068,7 +3068,7 @@ MonoBehaviour:
   fadeout: 0
   PausemenuUI: {fileID: 0}
   timeToFade: 1
-  music: {fileID: 0}
+  music: {fileID: 1435610019}
 --- !u!82 &300558582
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18436,7 +18436,7 @@ MonoBehaviour:
   fadeout: 0
   PausemenuUI: {fileID: 156066920}
   timeToFade: 0
-  music: {fileID: 0}
+  music: {fileID: 1435610019}
 --- !u!1 &1224450122
 GameObject:
   m_ObjectHideFlags: 0
@@ -22183,7 +22183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1598875315

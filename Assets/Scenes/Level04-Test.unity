@@ -14268,7 +14268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2011908800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14371,7 +14371,7 @@ MonoBehaviour:
   fadeout: 0
   PausemenuUI: {fileID: 0}
   timeToFade: 1
-  music: {fileID: 0}
+  music: {fileID: 222519033}
 --- !u!1 &2111376643
 GameObject:
   m_ObjectHideFlags: 0

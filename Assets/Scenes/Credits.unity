@@ -894,7 +894,7 @@ MonoBehaviour:
   fadeout: 0
   PausemenuUI: {fileID: 0}
   timeToFade: 1
-  music: {fileID: 0}
+  music: {fileID: 73359064}
 --- !u!1 &1055747813
 GameObject:
   m_ObjectHideFlags: 0

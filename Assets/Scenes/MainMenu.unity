@@ -1332,8 +1332,9 @@ MonoBehaviour:
   canvasGroup: {fileID: 1221955579}
   fadein: 0
   fadeout: 0
+  PausemenuUI: {fileID: 0}
   timeToFade: 1
-  music: {fileID: 0}
+  music: {fileID: 1300294205}
 --- !u!1 &1092064892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,7 +1979,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 69ee7c0b12dbc78419417b4fd7f93d88, type: 3}
   m_Resource: {fileID: 8300000, guid: 69ee7c0b12dbc78419417b4fd7f93d88, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0

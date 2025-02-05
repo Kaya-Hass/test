@@ -40,6 +40,11 @@ public class SceneChanger : MonoBehaviour
             if(canvasGroup.alpha >= 0)
             {
                 canvasGroup.alpha -= timeToFade * Time.deltaTime;
+                while(fadeout == true)
+                {
+                    Debug.Log("fading");
+                    music.volume += 0.01f;
+                }
                 if(canvasGroup.alpha == 0)
                 {
                     fadeout = false;

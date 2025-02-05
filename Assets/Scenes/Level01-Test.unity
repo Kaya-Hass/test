@@ -18542,7 +18542,7 @@ MonoBehaviour:
   fadeout: 0
   PausemenuUI: {fileID: 0}
   timeToFade: 1
-  music: {fileID: 0}
+  music: {fileID: 1939757960}
 --- !u!95 &634126428
 Animator:
   serializedVersion: 7
@@ -24876,7 +24876,7 @@ MonoBehaviour:
   fadeout: 0
   PausemenuUI: {fileID: 98520597}
   timeToFade: 0
-  music: {fileID: 0}
+  music: {fileID: 1939757960}
 --- !u!1 &1752104494
 GameObject:
   m_ObjectHideFlags: 0
@@ -27058,7 +27058,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 9fc74f3e92c7cd740b59bcf662a770e9, type: 3}
   m_Resource: {fileID: 8300000, guid: 9fc74f3e92c7cd740b59bcf662a770e9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.17
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
