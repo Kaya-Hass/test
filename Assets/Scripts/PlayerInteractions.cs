@@ -65,10 +65,18 @@ public class PlayerInteractions : MonoBehaviour
 
     public ParticleSystem speedFX;
 
+    bool openDoor;
+    public GameObject door;
+
+    public GameObject keyPuzzle;
+    public GameObject keyDisplay;
+     public GameObject KeyPuzzlePanel;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        keyDisplay.SetActive(false);
         if(SceneManager.GetActiveScene().name == "Level01-Test")
         {
             timer = 15f;
@@ -104,6 +112,7 @@ public class PlayerInteractions : MonoBehaviour
         puzzlePanel02.SetActive(false);
         puzzlePanel03.SetActive(false);
         capturePanel.SetActive(false);
+        KeyPuzzlePanel.SetActive(false);
 
         if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
         {
@@ -232,6 +241,12 @@ public class PlayerInteractions : MonoBehaviour
             inPuzzleZone = true;
         }
 
+        if (collision.CompareTag("KeyPuzzleTag"))
+        {
+            KeyPuzzlePanel.SetActive(true);
+            Debug.Log("Puzzle time, boy");
+        }
+
 
     }
 
@@ -294,6 +309,12 @@ public class PlayerInteractions : MonoBehaviour
         {
             numberOfCoins ++;
             coinSFX.Play();
+            Destroy(collision.gameObject);
+        }
+
+        if(collision.gameObject.CompareTag("key"))
+        {
+            keyDisplay.SetActive(true);
             Destroy(collision.gameObject);
         }
 
@@ -495,6 +516,12 @@ public class PlayerInteractions : MonoBehaviour
         puzzleTimerObject.SetActive(false);
         inPuzzle = false;
         StartCoroutine(DisplaySafe());
+    }
+
+    public void FindObject()
+    {
+        Destroy(door);
+        keyPuzzle.SetActive(false);
     }
 
     IEnumerator DisplayEnemy()

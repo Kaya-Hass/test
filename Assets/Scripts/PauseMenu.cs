@@ -23,18 +23,17 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        
+        Time.timeScale = 1f;
         PauseMenuUI.SetActive(false);
         SceneManager.LoadScene("MainMenu");
-        Time.timeScale = 1f;
         // StartCoroutine(LoadScene("MainMenu"));
     }
 
     public void LoadCredits()
     {
+        Time.timeScale = 1f;
         PauseMenuUI.SetActive(false);
         SceneManager.LoadScene("Credits");
-        Time.timeScale = 1f;
     }
 
     public void ResumePlay()

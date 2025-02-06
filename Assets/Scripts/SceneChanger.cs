@@ -123,16 +123,16 @@ public class SceneChanger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level01-Test" && GameObject.FindGameObjectsWithTag("coin") == null)
+        if (other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level01-Test" && GameObject.FindGameObjectWithTag("coin") == null && GameObject.FindGameObjectWithTag("key") == null)
         {
             StartCoroutine(LoadScene("Level02-Test"));
         }
-        else if(other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level02-Test" && GameObject.FindGameObjectsWithTag("coin") == null)
+        else if(other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level02-Test" && GameObject.FindGameObjectWithTag("coin") == null && GameObject.FindGameObjectWithTag("key") == null)
         {
             StartCoroutine(LoadScene("Level03-Test"));
            
         }
-        else if(other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level03-Test" && GameObject.FindGameObjectsWithTag("coin") == null)
+        else if(other.tag == "Exit" && SceneManager.GetActiveScene().name == "Level03-Test" && GameObject.FindGameObjectWithTag("coin") == null && GameObject.FindGameObjectWithTag("key") == null)
         {
             StartCoroutine(LoadScene("Level04-Test"));
         }
