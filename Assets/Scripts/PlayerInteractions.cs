@@ -508,7 +508,7 @@ public class PlayerInteractions : MonoBehaviour
         {
             if(SceneManager.GetActiveScene().name == "Level02-Test")
             {
-                puzzlePanel02P3.SetActive(false);
+                puzzlePanel02P4.SetActive(false);
                 puzzleTimerObject.SetActive(false);
                 inPuzzle = false;
                 partOfPuzzle = 0;
