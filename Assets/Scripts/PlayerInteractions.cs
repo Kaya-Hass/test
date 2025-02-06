@@ -70,12 +70,18 @@ public class PlayerInteractions : MonoBehaviour
 
     public GameObject keyPuzzle;
     public GameObject keyDisplay;
-     public GameObject KeyPuzzlePanel;
+    public GameObject KeyPuzzlePanel;
+    int numberOfSleeps;
+
+    public GameObject plusEnemy01;
+    public GameObject plusEnemy02;
+    public GameObject plusEnemy03;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        numberOfSleeps = 0;
         keyDisplay.SetActive(false);
         if(SceneManager.GetActiveScene().name == "Level01-Test")
         {
@@ -113,14 +119,17 @@ public class PlayerInteractions : MonoBehaviour
         puzzlePanel03.SetActive(false);
         capturePanel.SetActive(false);
         KeyPuzzlePanel.SetActive(false);
+        plusEnemy01.SetActive(false);
 
         if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
         {
             puzzlePanel02P4.SetActive(false);
+            plusEnemy02.SetActive(false);
         }
         if(SceneManager.GetActiveScene().name == "Level03-Test")
         {
             puzzlePanel02P5.SetActive(false);
+            plusEnemy03.SetActive(false);
         }
         numberOfCoins = 0;
         partOfPuzzle = 0;
@@ -129,6 +138,7 @@ public class PlayerInteractions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(numberOfSleeps);
         if(SceneManager.GetActiveScene().name == "Level01-Test")
         {
             coinsText.text = numberOfCoins + "/3";
@@ -216,6 +226,25 @@ public class PlayerInteractions : MonoBehaviour
             }
         }
 
+        if(numberOfSleeps == 1)
+        {
+            plusEnemy01.SetActive(true);
+        }
+        else if(numberOfSleeps == 3)
+        {
+            if(SceneManager.GetActiveScene().name == "Level02-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
+            {
+                plusEnemy02.SetActive(true);
+            }
+        }
+        else if(numberOfSleeps == 5)
+        {
+            if(SceneManager.GetActiveScene().name == "Level03-Test")
+            {
+                plusEnemy03.SetActive(true);
+            }
+        }
+
     }
 
     IEnumerator Flash()
@@ -276,6 +305,7 @@ public class PlayerInteractions : MonoBehaviour
         if(inSleepZone)
         {
             safePanel.SetActive(true);
+            numberOfSleeps += 1;
             yield return new WaitForSeconds(5);
             safePanel.SetActive(false);
             if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
