@@ -155,6 +155,7 @@ public class PlayerInteractions : MonoBehaviour
         {
             timer = 0;
             low = false;
+            asleep = true;
             StartCoroutine(CheckZone());
         }
 
@@ -192,6 +193,10 @@ public class PlayerInteractions : MonoBehaviour
             {
                 timer = 10f;
             }
+            else if(SceneManager.GetActiveScene().name == "Level03-Test")
+            {
+                timer = 15f;
+            }
             sleepBar.maxValue = timer;
         }
 
@@ -202,12 +207,13 @@ public class PlayerInteractions : MonoBehaviour
             if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
             {
                 timer = 15f;
+                sleepBar.maxValue = timer;
             }
             else if(SceneManager.GetActiveScene().name == "Level02-Test")
             {
                 timer = 10f;
+                sleepBar.maxValue = timer;
             }
-            sleepBar.maxValue = timer;
         }
 
     }
@@ -270,19 +276,25 @@ public class PlayerInteractions : MonoBehaviour
         if(inSleepZone)
         {
             safePanel.SetActive(true);
-            asleep = true;
             yield return new WaitForSeconds(5);
             safePanel.SetActive(false);
-            asleep = false;
             if(SceneManager.GetActiveScene().name == "Level01-Test" || SceneManager.GetActiveScene().name == "Level03-Test")
             {
-                timer = 15f;
+                if(asleep == true)
+                {
+                    timer = 15f;
+                    sleepBar.maxValue = timer;
+                }
             }
-            else if(SceneManager.GetActiveScene().name == "Level02-Test")
+            else if(SceneManager.GetActiveScene().name == "Level02-Test" && asleep == true)
             {
-                timer = 10f;
+                if(asleep == true)
+                {
+                    timer = 10f;
+                    sleepBar.maxValue = timer;
+                }
             }
-            sleepBar.maxValue = timer;
+            asleep = false;
         }
         else if(inPuzzleZone && !inSleepZone)
         {
@@ -326,8 +338,8 @@ public class PlayerInteractions : MonoBehaviour
 
         if(collision.gameObject.CompareTag("time"))
         {
-            Destroy(collision.gameObject);
             timer += 4f;
+            Destroy(collision.gameObject);
         }
 
         if(collision.gameObject.CompareTag("Exit"))
@@ -380,7 +392,7 @@ public class PlayerInteractions : MonoBehaviour
                 }
                 else if(SceneManager.GetActiveScene().name == "Level03-Test")
                 {
-                    puzzleTimer = 9f;
+                    puzzleTimer = 15f;
                 }
                 piece01.transform.position = initPiece01;
                 piece02.transform.position = initPiece02;
@@ -544,6 +556,10 @@ public class PlayerInteractions : MonoBehaviour
         else if(SceneManager.GetActiveScene().name == "Level02-Test")
         {
             timer = 10f;
+        }
+        else if(SceneManager.GetActiveScene().name == "Level03-Test")
+        {
+            timer = 15f;
         }
         sleepBar.maxValue = timer;
     }

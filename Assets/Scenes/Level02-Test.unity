@@ -3364,7 +3364,7 @@ MonoBehaviour:
   fill: {fileID: 1256721320}
   speedFX: {fileID: 1134854420}
   door: {fileID: 1095855399}
-  keyPuzzle: {fileID: 1450215449}
+  keyPuzzle: {fileID: 1459841683}
   keyDisplay: {fileID: 1934450079}
   KeyPuzzlePanel: {fileID: 1459841683}
 --- !u!114 &266552574
@@ -5666,7 +5666,7 @@ Transform:
   m_GameObject: {fileID: 703872115}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99999034, w: -0.00439995}
-  m_LocalPosition: {x: -1.33, y: 22.07, z: 0}
+  m_LocalPosition: {x: -1.17, y: 3.55, z: 0}
   m_LocalScale: {x: 9.638883, y: 23.406887, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6402,7 +6402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &791856085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7779,7 +7779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1117010141
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7843,7 +7843,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 266552577}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
@@ -26835,7 +26835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1743177836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27895,7 +27895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1867858911
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27959,7 +27959,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 266552577}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -29194,6 +29194,7 @@ GameObject:
   - component: {fileID: 2064661554}
   - component: {fileID: 2064661553}
   - component: {fileID: 2064661552}
+  - component: {fileID: 2064661555}
   m_Layer: 0
   m_Name: time
   m_TagString: time
@@ -29307,6 +29308,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &2064661555
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064661551}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2074546987
 GameObject:
   m_ObjectHideFlags: 0
